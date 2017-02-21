@@ -3,9 +3,13 @@
 
 (function(module) {
   //all the codez
-  function aboutViewInit() {
+  const aboutView = {}
 
+  aboutView.init = function() {
+    $('#contacts').empty();
+
+    $('#content').text('Representing the a-boot page for our Canadian friends.');
   }
 
-  module.aboutViewInit = aboutViewInit;
-})();
+  module.aboutView = aboutView;
+})(window);

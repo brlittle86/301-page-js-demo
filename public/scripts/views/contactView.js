@@ -3,9 +3,24 @@
 
 (function(module) {
   //all the codez
-  function contactViewInit() {
+  const contactView = {};
+
+  contactView.init = function() {
+
+    $('#content').text('My Contact List');
+    $('#contacts').empty();
+    $.getJSON('scripts/models/contact.json')
+     .then(function(data) {
+
+       data.forEach(function(contact){
+         let liEl = `<li>${contact.name}'s favorite number is ${contact['favorite number']}</li>`;
+         $('#contacts').append(liEl);
+       })
+     }, function(err) {
+       console.log(err);
+     });
 
   }
 
-  module.contactViewInit = contactViewInit;
-})();
+  module.contactView = contactView;
+})(window);

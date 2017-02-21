@@ -3,9 +3,13 @@
 
 (function(module) {
   //all the codez
-  function homeViewInit() {
+  const homeView = {};
 
+  homeView.init = function() {
+    $('#contacts').empty();
+
+    $('#content').text('Hello y\'all from the home page!');
   }
 
-  module.homeViewInit = homeViewInit;
-})();
+  module.homeView = homeView;
+})(window);

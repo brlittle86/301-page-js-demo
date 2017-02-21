@@ -14,18 +14,18 @@
 		"id": 897,
 		"name": "Erica",
 		"favorite number": 13,
-		"ninja": false
+		"ninja": true
 	},
 	{
 		"id": 8675309,
 		"name": "Crystal",
 		"favorite number": "pi",
-		"ninja": false
+		"ninja": true
 	},
 	{
 		"id": 2,
 		"name": "Razi",
 		"favorite number": 5,
-		"ninja": false
+		"ninja": true
 	}
 ]
